@@ -8,6 +8,7 @@ package de.nsickel.image.gui;
 import de.nsickel.image.application.ImageHandler;
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
 
 /**
  *
@@ -34,11 +35,9 @@ public class MainWindow extends JFrame {
         JButton buttonStartCompress = new JButton("Start Compression");
         getContentPane().add(buttonStartCompress);
         buttonStartCompress.addActionListener(new StartImageCompressionActionListener(this, label));
-
         
-
         setLocation(250, 190);
-        setSize(300, 90);
+        setSize(500, 500);
         setVisible(true);
     }
     
